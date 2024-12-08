@@ -3,8 +3,13 @@ Tüm notlar bir .txt dosyasında saklanır ve uygulama her açıldığında bu d
 Python programlama dili kullanılarak ve Nesne Yönelimli Programlama (OOP) prensiplerine uygun olarak geliştirilmiştir.
 
 Kullanılan Sınıflar:
--Not Sınıfı: Tek bir notun içeriğini ve tarih bilgisini saklar.
--NotDefteri Sınıfı: Notların eklenmesi, silinmesi, listelenmesi ve dosya işlemlerini yönetir.
+*Not Sınıfı*: Tek bir notun içeriğini ve tarih bilgisini saklar.
+__init__ Metodu:
+content parametresi: Kullanıcının girdiği not içeriğini tutar.
+date parametres: Notun tarihi ve saati. Eğer kullanıcı tarih vermezse, o anki tarih ve saat otomatik olarak atanır.
+datetime.now().strftime("%Y-%m-%d %H:%M:%S") ifadesi, geçerli tarih ve saati YYYY-MM-DD HH:MM:SS formatında alır.
+
+NotDefteri Sınıfı: Notların eklenmesi, silinmesi, listelenmesi ve dosya işlemlerini yönetir.
 Özellikler:
 notes: Uygulamada kayıtlı olan notların listesidir.
 filename: Notların saklandığı dosyanın adıdır (notes.txt).
